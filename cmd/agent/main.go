@@ -18,7 +18,7 @@ var (
 )
 
 func main() {
-	workerProcess := filepath.Dir(os.Args[0]) + "worker-process"
+	workerProcess := filepath.Dir(os.Args[0]) + "worker"
 
 	kingpin.Parse()
 	log.SetFlags(log.Lshortfile | log.Ldate | log.Ltime | log.LUTC)
