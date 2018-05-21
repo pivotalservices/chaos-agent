@@ -47,12 +47,10 @@ func main() {
 						f.Write([]byte("Couldn't connect to host!"))
 						defer func() {
 							f.Close()
-							log.Println("File closed!")
 						}()
 					}
 
 					time.Sleep(1 * time.Second)
-					log.Printf("There are %d open files\n", countOpenFiles())
 				}
 			}
 		}()
