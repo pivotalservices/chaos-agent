@@ -23,8 +23,6 @@ func main() {
 	log.SetFlags(log.Lshortfile | log.Ldate | log.Ltime | log.LUTC)
 	kingpin.Parse()
 
-	log.Println(os.Getpid())
-
 	if *doSpike {
 		log.Println("Time to do some pretty intensive computing!")
 		log.Printf("Logs will be located in %s/security-report*\n", os.TempDir())
